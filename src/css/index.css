@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color:  #614539;
+}
+body {
+  overflow-x: hidden;
+  min-width: 660px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.carousel .card {
+  position: relative;
+  width: 500px; 
+  height: 620px;
+  padding: 32px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.carousel .card p {
+  z-index: 100;
+}
+
+.carousel .card:hover {
+  overflow: visible;
+  z-index: 100;
+  scale: 1.2;
+}
+
+.carousel .card-geo {
+  background: #e4a555;
+  background: linear-gradient(90.24deg, #e4a555 0%, #af5427 98.1%);
+}
+
+.carousel .card-pyro {
+  background: #b52628;
+  background: linear-gradient(90.24deg, #b52628 0%, #600A0B 98.1%);
+}
+
+.carousel .card-cryo {
+  background: #7ea9d6;
+  background: linear-gradient(90.24deg, #7ea9d6 0%, #344F6C 98.1%);
+}
+
+.carousel .card-anemo {
+  background:  #74c0a6;
+  background: linear-gradient(90.24deg, #74c0a6 0%, #47816D 98.1%);
+}
+
+.carousel .card-hydro {
+  background: #3a8ba6;
+  background: linear-gradient(90.24deg, #3a8ba6 0%, #064155 98.1%);
+}
+
+.carousel .card-electro {
+  background: #7058a7;
+  background: linear-gradient(90.24deg, #7058a7 0%, #361D6F 98.1%);
+}
+
+.carousel .card-dendro {
+  background: #6bae44;
+  background: linear-gradient(90.24deg, #6bae44 0%, #29580F 98.1%);
+}
+
+.carousel .card .card-heading {
+  width: 180px; 
+}
+
+.carousel .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 180px; 
+  margin-top: 30px;
+}
+
+.carousel .card .card-body h6, 
+.carousel .card .card-heading h2 {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+.carousel .card .card-body p, 
+.carousel .card .card-heading p {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+.carousel .card .card-heading h2 {
+  font-size: 24px;
+}
+
+.carousel .card img {
+  position: absolute;
+  bottom: 5px;
+  left: 200px;
+  height: 550px;
+  z-index: 50;
+}
+
+.carousel .card-thoma img {
+  left: 250px;
+}
